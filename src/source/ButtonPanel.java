@@ -31,18 +31,23 @@ public class ButtonPanel extends JButton implements ActionListener {
 			e.printStackTrace();
 		}
 
-		// setLocation(500, 200);
+		UntuksetLocation();
+		UntuksetSize();
+
+	}
+	public UntuksetLocation(){
 		btnPlay.setLocation(500, 200);
 		btnHelp.setLocation(300, 300);
 		btnHelp.setVisible(true);
 		btnPlay.setVisible(true);
 		add(btnHelp);
 		add(btnPlay);
-		// btnHelp.setSize(100, 100);
+	}
+
+	public UntuksetSize(){
 		btnHelp.addActionListener(this);
 		btnPlay.addActionListener(this);
 		setVisible(true);
-
 	}
 
 	@Override
