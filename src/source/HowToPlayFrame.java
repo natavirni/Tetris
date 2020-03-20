@@ -2,20 +2,18 @@ package source;
 
 import javax.swing.JFrame;
 
-public class HowToPlayFrame {
-	public static JFrame window;
+public class HowToPlayFrame extends JFrame{
 	public static final int HEIGHT = 720, WIDTH = 640;
 
 	public HowToPlayFrame() {
-		window = new JFrame(
+		JFrame window = new JFrame(
 				"Game Legendaris Klasik Balok Susun Lucu Warna-warni Hanya menyerupai Tapi Bukan TETRIS 2019");
-		window.setSize(WIDTH, HEIGHT);
-		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		window.setResizable(false);
-		window.setLocationRelativeTo(null);
-
+		setSize(WIDTH, HEIGHT);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setResizable(false);
+		setLocationRelativeTo(null);
 		window.add(new HowToPlayPanel());
-		window.setVisible(true);
+		setVisible(true);
 	}
 
 }
